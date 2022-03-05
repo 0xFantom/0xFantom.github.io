@@ -1,1 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Space Mono', monospace;
+}
+
+/* hr {
+    position:relative;
+    padding:3rem 0;
+    border:none;
+}
+
+hr:before {
+    content: '\2044\2217\2013\2013\2013\2013\2013\2217\2044';
+    position: absolute;
+    top: 1.2rem;
+    right: 0;
+    left: 0;
+    font-size: 1.5em;
+    color: #0200fb;
+    text-align: center;
+} */
+
+/* center title */
+.title {
+    text-align: center;
+    font-size: 5em;
+}
 
