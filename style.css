@@ -13,12 +13,13 @@ body {
     background: hsl(270, 85%, 25%);
 
     --main-color: hsl(275, 100%, 70%);
+    --hover-color: hsl(0, 0%, 100%);
 }
 
 hr {
-    position:relative;
-    padding:3rem 0;
-    border:none;
+    position: relative;
+    padding: 3rem 0;
+    border: none;
 }
 
 hr:before {
@@ -45,4 +46,25 @@ hr:before {
     bottom: 1rem;
     right: 1rem;
     font-size: 1.75em;
+}
+
+li {
+    list-style: none;
+    background-color: hsl(0, 0%, 10%);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.repo-name {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+a:hover {
+    color: var(--hover-color);
 }
