@@ -5,25 +5,32 @@
     padding: 0;
     box-sizing: border-box;
 
+    color: #e0aaff;
     font-family: 'Space Mono', monospace;
 }
 
-/* hr {
+body {
+    background: hsl(270, 85%, 25%);
+
+    --main-color: hsl(275, 100%, 70%);
+}
+
+hr {
     position:relative;
     padding:3rem 0;
     border:none;
 }
 
 hr:before {
-    content: '\2044\2217\2013\2013\2013\2013\2013\2217\2044';
+    content: '\2044\2217\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2217\2044';
     position: absolute;
     top: 1.2rem;
     right: 0;
     left: 0;
-    font-size: 1.5em;
-    color: #0200fb;
+    font-size: 2em;
+    color: var(--main-color);
     text-align: center;
-} */
+}
 
 /* center title */
 .title {
@@ -31,3 +38,10 @@ hr:before {
     font-size: 5em;
 }
 
+.clock {
+    /* put in bottom right corner */
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.75em;
+}
