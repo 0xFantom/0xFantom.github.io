@@ -38,6 +38,8 @@ hr:before {
     padding-top: 1rem;
     text-align: center;
     font-size: 5em;
+
+    animation: breathe 1s ease-in-out infinite;
 }
 
 .clock {
@@ -47,14 +49,6 @@ hr:before {
     right: 1rem;
     font-size: 1.75em;
     transition: all 0.5s;
-}
-
-li {
-    list-style: none;
-    background-color: hsl(0, 0%, 10%);
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 0.5rem;
 }
 
 .repo-name {
@@ -68,4 +62,29 @@ a {
 
 a:hover {
     color: var(--hover-color);
+}
+
+.repo {
+    list-style: none;
+    background-color: hsl(0, 0%, 10%);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    transition: all 500ms;
+}
+
+.repo:hover {
+    background-color: hsl(270, 80%, 15%);
+}
+
+@keyframes breathe {
+    0% {
+        color: hsl(280, 100%, 80%);
+    }
+    50% {
+        color: hsl(280, 100%, 70%);
+    }
+    100% {
+        color: hsl(280, 100%, 80%);
+    }
 }
