@@ -46,6 +46,7 @@ hr:before {
     bottom: 1rem;
     right: 1rem;
     font-size: 1.75em;
+    transition: all 0.5s;
 }
 
 li {
