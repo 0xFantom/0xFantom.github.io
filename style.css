@@ -18,12 +18,12 @@ body {
 
 hr {
     position: relative;
-    padding: 3rem 0;
+    padding: 2em 0;
     border: none;
 }
 
 hr:before {
-    content: '\2044\2217\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2217\2044';
+    content: '\2022\2022\2022';
     position: absolute;
     top: 0rem;
     right: 0;
@@ -31,13 +31,14 @@ hr:before {
     font-size: 2em;
     color: var(--main-color);
     text-align: center;
+    animation: loading 2s ease-in-out infinite;
 }
 
 /* center title */
 .title {
     padding-top: 1rem;
     text-align: center;
-    font-size: 5em;
+    font-size: 6em;
 
     animation: breathe 1s ease-in-out infinite;
 }
@@ -64,6 +65,11 @@ a:hover {
     color: var(--hover-color);
 }
 
+p {
+    display: inline-block;
+    color:hsla(0, 0%, 100%, 0.25);
+}
+
 .repo {
     list-style: none;
     background-color: hsl(0, 0%, 10%);
@@ -86,5 +92,17 @@ a:hover {
     }
     100% {
         color: hsl(280, 100%, 80%);
+    }
+}
+
+@keyframes loading {
+    0% {
+        width: 50%;
+    }
+    50% {
+        width: 150%;
+    }
+    100% {
+        width: 50%;
     }
 }

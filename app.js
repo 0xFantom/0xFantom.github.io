@@ -2,8 +2,8 @@
 
 let slideSpeed = 500;
 
-// clock with jQuery
 $(document).ready(function() {
+
   $("#portable").click(() => {
     $("#portable .repo-desc").toggle(slideSpeed);
     $(`#portable .doc`).slideToggle(slideSpeed);
