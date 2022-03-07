@@ -53,9 +53,7 @@ hr:before {
 }
 
 .repo-name {
-    display: block;
-    width: 100%;
-    font-size: 100%;
+    font-size: 2em;
 }
 
 a {
