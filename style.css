@@ -31,16 +31,16 @@ hr:before {
     font-size: 2em;
     color: var(--main-color);
     text-align: center;
-    animation: loading 2s ease-in-out infinite;
 }
 
 /* center title */
 .title {
     padding-top: 1rem;
     text-align: center;
-    font-size: 6em;
-
-    animation: breathe 1s ease-in-out infinite;
+    width: 100%;
+    font-size: 5rem;
+    min-width: 50%;
+    max-width: 100%;
 }
 
 .clock {
@@ -53,7 +53,9 @@ hr:before {
 }
 
 .repo-name {
-    font-size: 1.5em;
+    display: block;
+    width: 100%;
+    font-size: 100%;
 }
 
 a {
@@ -67,42 +69,18 @@ a:hover {
 
 p {
     display: inline-block;
-    color:hsla(0, 0%, 100%, 0.25);
+    color: hsla(0, 0%, 100%, 0.25);
 }
 
 .repo {
     list-style: none;
     background-color: hsl(0, 0%, 10%);
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 0.5rem;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.5em;
     transition: all 500ms;
 }
 
 .repo:hover {
     background-color: hsl(270, 80%, 15%);
-}
-
-@keyframes breathe {
-    0% {
-        color: hsl(280, 100%, 80%);
-    }
-    50% {
-        color: hsl(280, 100%, 70%);
-    }
-    100% {
-        color: hsl(280, 100%, 80%);
-    }
-}
-
-@keyframes loading {
-    0% {
-        width: 50%;
-    }
-    50% {
-        width: 150%;
-    }
-    100% {
-        width: 50%;
-    }
 }
